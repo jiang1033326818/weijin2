@@ -1,0 +1,85 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.4",
+	"appid": "wx0f95ffcd25a151de",
+	"projectname": "weijin",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "未授权进入",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "报表",
+					"pathName": "pages/achievement/achievement",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "日程",
+					"pathName": "pages/schedule/schedule",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "任务",
+					"pathName": "pages/task/task",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "购电方案",
+					"pathName": "pages/eleplan/eleplan",
+					"query": "param={\"id\":3,\"companyName\":\"测试售电\",\"name\":\"张三\",\"mobile\":\"17777777777\",\"tenantId\":\"e268940179102d1000000165cd9a5a58\",\"tenantName\":\"测试售电\"}"
+				},
+				{
+					"id": 5,
+					"name": "预约服务",
+					"pathName": "pages/bespeak/bespeak",
+					"query": "param={\"id\":3,\"companyName\":\"测试售电\",\"name\":\"张三\",\"mobile\":12351244511,\"company\":\"地理国际\",\"powerNum\":\"4432\"}"
+				},
+				{
+					"id": 6,
+					"name": "分享进入",
+					"pathName": "pages/task/task",
+					"query": "param={\"task\":{\"id\":1,\"name\":\"2018年09月 月度用电需求申报\",\"customerId\":1,\"customerName\":\"华润热电集团河北第一热电厂\",\"closingTime\":1537574399000,\"gatherNoticeId\":1,\"type\":\"YEAR\",\"leaveDays\":1},\"status\":\"doing\",\"contact\":{\"name\":\"王某某\"}}"
+				}
+			]
+		}
+	}
+}

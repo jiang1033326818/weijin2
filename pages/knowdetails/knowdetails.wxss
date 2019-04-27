@@ -1,0 +1,6 @@
+/* pages/knowdetails/knowdetails.wxss */
+@import "../wxParse/wxParse.wxss";
+.uinn{
+  width:100%;
+  padding: 20rpx 5%;
+}

@@ -1,0 +1,25 @@
+<view class='chat'>
+  <view class='char-w'>
+
+  </view>
+
+  <view wx:for="{{typeList}}" class="row-flex list-item"  >
+    <view class='personchat' bindtap='toclues' id='{{item.uid}}' data-img='{{item.image}}' >
+      <view class='chatimg'>
+        <image src="{{item.image===null?'':item.image}}"></image>
+      </view>
+      <view class='charcon'>
+       <view class='chattop'>
+        <view class='chatname'>{{item.nikeName===null?'':item.nikeName}}</view>
+        <view class='chattime'>{{item.lastDate===null?'':item.lastDate}}</view>
+      </view>
+      <view style='clear:both'></view>
+      <view class='chatbottom'>
+        <view class='chatcontent'>{{item.lastMsg===null?'':item.lastMsg.length>100?"[图片]":item.lastMsg}}</view>
+      </view>
+      </view>
+     
+      <view class='chatred'  style='display:{{item.wdxx===0?"none":"block"}}'>{{item.wdxx}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,97 @@
+<!--pages/mine/mine.wxml-->
+
+<view class='container'>
+
+  <!-- <view class='loginout'>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view> -->
+
+  <view class='mytop'>
+    <view class='mytop1' style='background-image:url("http://zadai.net:8000/uploads/mybg.png")'>
+      <view>{{userInfo.nickName}}</view>
+    </view>
+    <view class='mytop2'>
+      您好,尊敬的会员
+     
+    </view>
+
+    <view class='head'>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+  </view>
+
+
+  <!-- <button
+      bindtap='loginout' 
+      class='btn-class'
+      >退出登录</button> -->
+
+
+<view class='item0'>
+
+</view>
+<view class='item'  bindtap='toconsu'>
+  <view class='left'>我的顾问</view>
+  <view class='right'>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+  </view>
+</view>
+<view class='item' bindtap='toadviser'>
+  <view class='left' >顾问入口</view>
+  <view class='right'>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+  </view>
+</view>
+<view class='item' bindtap='tocooperation'>
+  <view class='left'>商务合作</view>
+  <view class='right'>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+  </view>
+</view>
+
+<view class='item' bindtap='left1'>
+  <view class='left' >联系客服</view>
+  <view class='right'>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+  </view>
+</view>
+<!-- <view class='item'  bindtap='aboutus'>
+  <view class='left'>关于我们</view>
+  <view class='right'>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+  </view>
+</view> -->
+
+<!-- 绑定手机号 -->
+<view class='bindphone' style='display:{{display}}'>
+  </view>
+  <view class='bindphone_p' style='display:{{display}};background-image:url(http://zadai.net:8000/uploads/bindphone.png) '>
+    <view class='white'>
+      <view class='whiteinput'>
+        <text>手机号:</text>
+        <input placeholder='请输入您的手机号' value='{{phone}}' bindchange='phone' maxlength='11' type='text'></input>
+      </view>
+      <view class='whiteinput2'>
+        <text>验证码:</text>
+        <view class='yanzhengma'>
+          <input placeholder='' value='{{phonecode}}' bindchange='phonecode' maxlength='11' type='text'></input>
+          <view bindtap='getVerificationCode'>{{time}}</view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class='whitebutton' bindtap='semb'>提交</view>
+
+  </view>
+  <view class='bindphone_x' bindtap='closeshow' style='display:{{display}}'>
+    <image src='http://zadai.net:8000/uploads/close.png'></image>
+  </view>
+
+
+</view> 

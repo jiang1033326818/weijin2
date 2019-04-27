@@ -1,0 +1,212 @@
+/* pages/details/details.wxss */
+.detailspage{
+  background: #f0f0f0;
+  padding-top: 1rpx;
+}
+.detailscard{
+  border: 1px solid #dddddd;
+  width: 94%;
+  margin: 20rpx 3%;
+  border-radius: 20rpx;
+  height: 300rpx;
+  overflow: hidden;
+}
+.cardtop{
+  height: 150rpx;
+  display: flex;
+  padding: 25rpx 3%;
+  /* background: #11B9FE; */
+  color: #FFFFFF;
+   
+}
+.circle{
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.cardtop image{
+  width: 100rpx;
+  height: 150rpx;
+  margin-top: -2rpx;
+}
+
+.headbs{
+  margin-left: 3%;
+  margin-top: 30rpx;
+
+}
+.headb{
+  font-size: 35rpx;
+}
+.heads{
+  font-size: 25rpx;
+}
+.cardbottom{
+  height:100rpx; 
+  display: flex;
+    padding: 0 3%;
+  background: #ff9933;
+  color: #FFFFFF;
+}
+.handbs2{
+  width: 33%;
+  text-align: center
+}
+.headb2{
+  font-size: 35rpx;
+  width: 100%;
+}
+.heads2{
+  font-size: 25rpx;
+  width: 100%;
+}
+
+.belong{
+  background: #FFFFFF;
+  padding: 20rpx 3%;
+  height: 170rpx;
+}
+.belongb{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.belongc{
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-left: 3%;
+}
+.belongs{
+  font-size: 30rpx;
+}
+.comment{
+  background: #FFFFFF;
+  padding: 20rpx 0;
+  margin-top: 20rpx;
+  margin-bottom:65rpx; 
+}
+.comment-item{
+  float: left;
+  width: 200rpx;
+  margin-left: 3%;
+  height: 70rpx;
+  background: #E7EEFF;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin-top: 10rpx;
+  color: #666666;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.comment-item2{
+  float: left;
+  width: 200rpx;
+  margin-left: 3%;
+  height: 70rpx;
+  background: #11B9FE;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin-top: 10rpx;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.toplist{
+  /* height: 400rpx; */
+  width: 100%;
+  /* border: 1px solid #f0f0f0; */
+  border-bottom:solid 1rpx #ccc; 
+}
+.rightmap{
+  float: right;
+  font-size: 25rpx;
+  font-weight: 500;
+  margin-right: 3%;
+}
+ 
+.context{
+  padding: 20rpx 3%;
+  font-size: 30rpx;
+  background: #ffffff;
+  /* height: 150rpx; */
+}
+.context2{
+  padding: 20rpx 3%;
+  font-size: 30rpx;
+  background: #ffffff;
+  color: #666666;
+  height: 46rpx;
+}
+.toptitle{
+  display: flex;
+  height: 120rpx;
+  background: #ffffff
+}
+.toptitle1{
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  font-weight: bold;
+  width: 750rpx;
+}
+.circul{
+  margin: 0 4%;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius:50%;
+  border: 1px solid #dddddd; 
+  float: left;
+  background: #f0f0f0;
+   overflow: hidden;
+}
+.toptitle image{
+  height: 80rpx;
+  width: 80rpx;
+  
+ 
+}
+.bottomthree{
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  background: #ffffff
+}
+.bottomthree1{
+  width: 26%;
+  height: 100rpx;
+  text-align: center;
+  border-right: 1px solid #dddddd
+}
+.bottomthree1 image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.bottomthree2{
+  width: 37%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background:  #FFB900;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.bottomthree3{
+  width: 37%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background:  #1B65FA;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  font-weight: bold;
+}

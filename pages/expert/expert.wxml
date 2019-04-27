@@ -1,0 +1,14 @@
+<!--pages/expert/expert.wxml-->
+<view class="expert-container">
+  <view class='allOficon'>
+    <scroll-view class="icon-list">
+    <view wx:for="{{typeList}}"  class="row-flex list-item" data-list='{{item.label}}'  bindtap='tolist'>
+      <image
+        src="http://zadai.net:8000/uploads/expert/{{item.value}}.png"
+        class="item-header"
+      ></image>
+      <view class='item-text'>{{item.label}}</view>
+    </view>
+  </scroll-view>
+  </view>
+</view>

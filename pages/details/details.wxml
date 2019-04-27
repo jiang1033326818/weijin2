@@ -1,0 +1,106 @@
+<!--pages/details/details.wxml
+姜海鹏 1.12
+-->
+<view class='detailspage' >
+  <view class='detailscard'>
+    <view class='cardtop'>
+
+      <view class='circle'>
+        <!-- <image src='http://zadai.net:8000/uploads/header/head0.jpg'></image> -->
+        <image src="{{'http://zadai.net:8000'+useradviceid.workImage}}"></image>
+      </view>
+      <view class='headbs'>
+        <view class='headb'>{{useradviceid.realName===null?'':useradviceid.realName}}</view>
+        <!-- <view class='heads'>{{type}}</view> -->
+          <view class='heads'>{{useradviceid.workCompany===null?'':useradviceid.workCompany}}</view>
+      </view>
+      <view class='headbs'>
+        <view class='headb'>{{useradviceid.hobby===null?'':useradviceid.hobby}}</view>
+        <view class='heads'>{{useradviceid.level===null?'':useradviceid.level}}</view>
+      </view>
+
+
+    </view>
+    <view class='cardbottom'>
+      <view class='handbs2'>
+        <!-- <view class='headb2'>{{useradviceid.name}}</view>
+        <view class='heads2'>{{useradviceid.business}}</view> -->
+            <view class='headb2'>5398</view>
+        <view class='heads2'>服务人数</view>
+      </view>
+      <view class='handbs2'>
+        <!-- <view class='headb'>{{useradviceid.name}}</view>
+        <view class='heads'>{{type2}}</view> -->
+         <view class='headb'>98%</view>
+        <view class='heads'>好评率</view>
+      </view>
+      <view class='handbs2'>
+        <!-- <view class='headb'>{{useradviceid.nikeName}}</view> -->
+          <view class='headb'>100分</view>
+        <!-- <view class='heads'>{{type2}}</view> -->
+         <view class='heads'>同行认可</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='belong'>
+    <view class='belongb'>顾问擅长</view>
+    <view class='belongs'>{{useradviceid.hobby}}</view>
+  </view>
+
+
+  <view class='comment'>
+    <view class='belongc'>客户评价</view>
+    <view wx:for="{{tabs}}" wx:key="tabs">
+      <view id="{{index}}" class="comment-item {{ activeIndex== index?'comment-item2':''}}" bindtap='navTabClick'>{{item.name}}{{item.value}}</view>
+    </view>
+
+    <view style='clear:both'></view>
+
+    <view class='maplist'>
+      <view  wx:for="{{getguesttalk}}" class="row-flex list-item">
+        <view class='toplist'>
+          <view class='toptitle'>
+            <view class='toptitle1' style='font-size:30rpx'>
+              <view class='circul'>
+                <image src='{{item.image}}'>
+                </image>
+              </view>
+              {{item.nikeName}}
+              <view class='rightmap'
+               style='color:{{item.status==="很满意"?"#FE6F61":item.status==="满意"?"#1B65FA":"black"}}'>{{item.status}}</view>
+            </view>
+            <view class='toptitle2'>
+              <!-- {{item.content}} -->
+            </view>
+            <view class='clear'></view>
+          </view>
+
+          <view class='context'>
+            {{item.content}}
+          </view>
+          <view class='context2'>
+          {{item.creationTime}} 
+          </view>
+        </view>
+      </view>
+    </view>
+
+<!-- 底部的按钮 -->
+    <view class='bottomthree'>
+        <view class='bottomthree1' bindtap='allstar' data-message="{{useradviceid.message}}">
+          <image src='{{star===0?subscribe:subscribe2}}'></image>
+
+          <view style='color:{{star===0?"#666666":"#FE6F61"}};font-size:25rpx'>{{star===0?message:message2}}</view>
+        </view>
+        <view  class='bottomthree2' bindtap='callphone'   data-id="{{useradviceid.id}}"
+          data-num="{{useradviceid.mobile}}">电话咨询
+        </view>
+        <view  class='bottomthree3' bindtap='bottombtn'
+        data-id="{{useradviceid.id}}" data-askid="{{useradviceid.uid}}" data-img="{{'http://zadai.net:8000'+useradviceid.workImage}}">
+            咨询
+        </view>
+    </view>
+  </view>
+
+</view> 

@@ -1,0 +1,109 @@
+<view class="page">
+  
+  <view class="navbar">
+    <block wx:for="{{tabs}}" wx:key="tabs">
+      <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+        <view class="navbar__title">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+  <swiper class='swiper' current="{{activeIndex}}" style='height:{{height}}rpx'>
+
+    <swiper-item class='swiper-item'  style='height:{{height1}}rpx'>
+      <view class='allOfpeople'>
+
+        <view wx:for="{{activeIndex==='0'?getimgphone:gitimgchat}}" class="row-flex list-item">
+          <view class='topcon'>
+            <view class='itemtime'>{{item.creationTime}}</view>
+            <view class='pingjia'>{{item.pingjia}}</view>
+          </view>
+
+          <view class='toplist'  bindtap='toclues' data-pnum="{{item.uid}}" data-img="{{'http://zadai.net:8000/'+item.workImage}}">
+            <view class='leftlist'>
+              <image src="{{'http://zadai.net:8000/'+item.workImage}}" class="item-header"></image>
+            </view>
+            <view class='rightlist'>
+              <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName===null?'':item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?"":item.level}}</text>
+
+              <view class='pink'>
+                <text>{{item.workCompany===null?"":item.workCompany}}</text>
+              </view>
+              <view class='blue'>
+                <text>{{item.hobby===null?"":item.hobby}}</text>
+              </view>
+            </view>
+
+
+<view class='peoplebutton2' catchtap='btnclick' data-getcontent="{{item.cid}}">
+              立即评价
+            </view>
+          </view>
+         
+        </view>
+
+      </view>
+    </swiper-item>
+<swiper-item class='swiper-item' >
+      <view class='allOfpeople'>
+
+        <view wx:for="{{activeIndex==='1'?getimgphone:gitimgchat}}" class="row-flex list-item">
+          <view class='topcon'>
+            <view class='itemtime'>{{item.creationTime}}</view>
+            <view class='pingjia'>{{item.pingjia}}</view>
+          </view>
+
+          <view class='toplist'  bindtap='toclues' data-pnum="{{item.uid}}" data-img="{{'http://zadai.net:8000/'+item.workImage}}">
+            <view class='leftlist'>
+              <image src="{{'http://zadai.net:8000/'+item.workImage}}"  class="item-header"></image>
+            </view>
+            <view class='rightlist'>
+              <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName===null?'':item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?"":item.level}}</text>
+
+              <view class='pink'>
+                <text>{{item.workCompany===null?"":item.workCompany}}</text>
+              </view>
+              <view class='blue'>
+                <text>{{item.hobby===null?"":item.hobby}}</text>
+              </view>
+            </view>
+
+             <view class='peoplebutton2' catchtap='btnclick' data-getcontent="{{item.cid}}">
+              立即评价
+            </view>
+
+          </view>
+       
+        </view>
+
+      </view>
+    </swiper-item>
+
+
+  </swiper>
+ 
+
+ <modal  class="modal" title="标题" confirm-text="确认" success="suc" cancel-text="取消" hidden="{{onOff}}" bindconfirm="modalConfirm" bindcancel="modalCancel">
+              <!-- 满意程度 -->
+              <radio-group class="radio-group" bindchange="radioChange"  >
+                <label class="radio" wx:for="{{items}}">
+                  <radio value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+                </label>
+
+              </radio-group>
+              <textarea cols="50" rows="5" bindinput='bind1' class='bingtext'  data-contentid="{{item.id}}"></textarea>
+        
+
+            </modal>
+
+               <modal class="modal" title="标题" confirm-text="确认" success="suc" cancel-text="取消" hidden="{{onOff}}" bindconfirm="modalConfirm2" bindcancel="modalCancel2">
+              <!-- 满意程度 -->
+              <radio-group class="radio-group" bindchange="radioChange">
+                <label class="radio" wx:for="{{items}}">
+                  <radio value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+                </label>
+
+              </radio-group>
+            <textarea bindconfirm="textaaa" cols="50" rows="5" value='{{ta}}' bindinput='bind2' class='bingtext'  data-contentid="{{item.id}}"></textarea>
+        
+            </modal>
+</view>

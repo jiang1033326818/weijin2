@@ -1,0 +1,190 @@
+<!--pages/home/home.wxml-->
+<view class='homepage'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <navigator url="{{item.link}}" hover-class="navigator-hover">
+          <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <view class='gradual'>
+    <view class='itemleft' bindtap='tophonetel'>
+      <image class='phonequick' src='http://zadai.net:8000/uploads/tel2.png'>
+      </image>
+      <view style='font-size:35rpx' class='ffffff'>
+        快捷电话
+      </view>
+      <view style='font-size:25rpx' class='ffffff'>
+        服务问题
+      </view>
+      <view style='font-size:25rpx' class='ffffff'>
+        一个电话全搞定
+      </view>
+    </view>
+
+    <view class='itemright'>
+      <view class='itemrtop' bindtap='toexpert'>
+        <view style='font-size:35rpx' class='ffffff'>
+          本地专家服务
+        </view>
+        <view style='font-size:25rpx' class='ffffff'>
+          本地服务顾问 更专业 更贴心
+        </view>
+      </view>
+
+      <view class='itemrbottom' bindtap='toconsultant'>
+        <view style='font-size:35rpx' class='ffffff'>
+          微金专家服务
+        </view>
+        <view style='font-size:25rpx' class='ffffff'>
+         每天解决上万个服务问题
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='cccc' style='background:white'>
+    <!-- <view>
+      <image src='http://zadai.net:8000/uploads/toutiao.png'></image>
+    </view>
+    <text>没有稳定工作如何快速找到工作</text> -->
+     <!-- <swiper autoplay="{{autoplay1}}" interval="{{interval1}}" duration="{{duration1}}" circular="true" vertical="true">
+    <block wx:for="{{getlunbolist}}">
+      <swiper-item class='cccc'>
+        <!-- <navigator url="{{item.link}}" hover-class="navigator-hover"> -->
+          <!-- <image src="{{item.url}}" class="slide-image" width="355" height="150" /> -->
+          <!-- <view class='cccc'></view>
+     <view> -->
+      
+    <!-- </view> -->
+    <!-- <text>{{item.title}}</text>
+    </view> -->
+        <!-- </navigator> -->
+       <!-- </swiper-item>
+    </block>
+  </swiper> --> 
+   <swiper interval="{{interval}}" duration="{{duration}}" circular="true"  autoplay="{{autoplay}}" vertical="true">
+   
+    <block wx:for="{{getknowledge}}">
+      <swiper-item class="smallitem" bindtap="toapply2"  data-id="{{item.id}}">
+        <!-- <navigator url="{{item.link}}" hover-class="navigator-hover"> -->
+         <view class='smallnav'>
+          <text class="swiper-text">{{item.title}}</text></view>
+        <!-- </navigator> -->
+      </swiper-item>
+    </block> 
+  </swiper>
+   <image  class='swiper-image' src='http://zadai.net:8000/uploads/toutiao.png'>
+         </image>
+  </view>
+ 
+  <view class='maplist'>
+    <view class="navbar">
+      <block wx:for="{{tabs}}" wx:key="tabs">
+        <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+          <view class="navbar__title">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+
+
+
+  <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange" class='swiper' style='height:{{height}}rpx' id='item0' scroll-y>
+
+  
+    
+
+
+
+    <swiper-item class='swiper-item' id='item2' data-index='{{activeIndex}}'>
+      <view class='allOfpeople'>
+        <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+          <!-- <block wx:for="{{navData2}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx"> -->
+            <block wx:for="{{navData2}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+            <view class="nav-item {{currentTab2 == idx ?'active':''}}"  data-current="{{idx}} " bindtap="switchNav2" data-chanpin="{{navItem.id}}" >{{navItem.typeName}}</view>
+          </block>
+        </scroll-view>
+        
+        <scroll-view class="icon-list">
+          <view wx:for="{{getknowledge}}" class="row-flex list-item">
+            <view class='toplist2' bindtap='toapply2'  data-id="{{item.id}}" >
+              <view class='knowledge' >
+                <image src='{{"http://zadai.net:8000/uploads"+item.image}}'></image>
+              </view>
+
+              <view class='knowledge_r'>
+                <view class='knowledge_rt'>{{item.title}}</view>
+
+                <view class='knowledge_rb'>
+                  <view class='knowledge_rbl'>{{item.typeName}} </view>
+                  <view class='knowledge_rbr'>{{item.creationTime}} </view>
+                </view>
+  
+              </view>
+
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </swiper-item>
+<!-- <swiper-item class='swiper-item'  data-index='{{activeIndex}}' id='item1'>
+      <view class='allOfpeople'>
+        <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+          <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+            <view class="nav-item0 {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+          </block>
+        </scroll-view>
+        <scroll-view class="icon-list">
+          <view wx:for="{{keykey===0?typeList:typeList0}}" class="row-flex list-item">
+          
+              <view class='typelist_item' data-id='{{item.https}}' bindtap='tonew'>
+              <!--热门图片-->
+              <!-- <image src="{{item.image}}" class='img_item'></image>
+                <!-- {{item.name}} -->
+              <!-- </view>
+          </view>
+        </scroll-view>
+      </view>
+    </swiper-item> -->
+  </swiper>
+
+
+
+
+  <!-- 绑定手机号码 -->
+  <view class='bindphone' style='display:{{display}}'>
+  </view>
+  <view class='bindphone_p' style='display:{{display}};background-image:url(http://zadai.net:8000/uploads/bindphone.png) '>
+    <view class='white'>
+      <view class='whiteinput'>
+        <text>手机号:</text>
+        <input placeholder='请输入您的手机号' value='{{phone}}' bindchange='phone' maxlength='11' type='text'></input>
+      </view>
+      <view class='whiteinput2'>
+        <text>验证码:</text>
+        <view class='yanzhengma'>
+          <input placeholder='' value='{{phonecode}}' bindchange='phonecode' maxlength='11' type='text'></input>
+          <view bindtap='getVerificationCode'>{{time}}</view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class='whitebutton' bindtap='semb'>提交</view>
+
+  </view>
+  <view class='bindphone_x' bindtap='closeshow' style='display:{{display}}'>
+    <image src='http://zadai.net:8000/uploads/close.png'></image>
+  </view>
+
+
+
+
+</view>

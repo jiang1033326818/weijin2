@@ -1,0 +1,4 @@
+<!--pages/zzzzz3/zzzzz3.wxml-->
+<view>
+  <web-view src="https://creditcard.cmbc.com.cn/wsv2/?enstr=SrfVvgUv0DuZPBdRiQhPzOgc9yiaY8NJ9vUC%2bzlEjfeHOS4L2IqkTtiE6Cz6ZAYP9nV8w5VnMAYaPvXO0toKdSIYrQd8uXKC52UMNYEmPIVQTWPqkMaNg%2bbOdWJDmISiwfC5ttoxOcU8jePHYoWPdF09HjgcmwxNE76XG7Klt9OYwrIXent738sDSWBDesoCoFsVuETPZxjiLCQOowD9HDAKCjlJHtdSItRhBigAaLrqR8geF%2fS2ELGHkBCyrCerDbR6izSFKqYddx0oa%2bSK2sZMnX0XF3HfN9Lt8UNKPmLTOeQqgc7i3R3oL6o07qdMIJ5nHMVLQdCHy8WAlwJ2NQ%3d%3d"></web-view>
+</view>

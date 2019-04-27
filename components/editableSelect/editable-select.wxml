@@ -1,0 +1,25 @@
+<!--components/editableSelect/editable-select.wxml-->
+<view class="es-container">
+  <text class="lable-class">{{labelText}}</text>
+  <view class="input-container">
+    <input
+      class="es-input input-class"
+      value="{{inputVal}}"
+      name="{{name}}"
+      placeholder="{{placeHolder}}"
+      bindfocus="inputFocus"
+      bindblur="inputBlur"
+      bindinput="inputChange"
+    >
+    </input>
+    <scroll-view wx:if="{{selectShow}}" class="s-container" scroll-y>
+      <view
+        class="select-item"
+        wx:for="{{selectList}}"
+        wx:key="{{selectKey}}"
+        data-item="{{item}}"
+        catchtap="itemClick"
+      >{{item[selectKey]}}</view>
+    </scroll-view>
+  </view>
+</view>

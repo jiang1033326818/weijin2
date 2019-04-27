@@ -1,0 +1,70 @@
+<!--login.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="no-user" wx:if="{{!hasUserInfo && canIUse}}">
+      <image class="logo" src="http://zadai.net:8000/uploads/logo.jpg"></image>
+      <text class="summary">
+        　一站式智能服务平台
+      </text>
+      <button
+        class="btn-class try-btn"
+        open-type="getUserInfo"
+        bindgetuserinfo="getUserInfo"
+      >进入微金网 </button>
+    </view>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view 
+    wx:if="{{hasUserInfo}}"
+    class="login-contaner"
+  >
+    <view class="login-item">
+      <!-- <text class="login-item-label">手机号码</text>
+      <input
+        type="number"
+        class="login-input-phone"
+        bindblur="phoneChangeOver"
+        placeholder-class="input-placeholder"
+        maxlength="11"
+        placeholder="请输入手机号码"
+      /> -->
+      <!-- <button
+        class="send-code-btn"
+        type="primary"
+        bindtap="sendCode"
+        disabled="{{codeSendBtnDisabled}}"
+      >{{timeCount > 0 ? (timeCount + 's重新发送') : '发送验证码'}}</button> -->
+    </view>
+    <!-- <view wx:if="{{phoneCheckMsg}}" class="error-tip">
+      <icon type="warn" size="10" />
+      {{phoneCheckMsg}}
+    </view> -->
+    <!-- <view class="login-item">
+      <text class="login-item-label">登录密码</text>
+      <input
+        type="password"
+        class="login-input-phone"
+        placeholder-class="input-placeholder"
+        bindblur="pwdChangeOver"
+        placeholder="请输入密码"    
+      />
+    </view> -->
+    <!-- <view wx:if="{{pwdCheckMsg}}" class="error-tip">
+      <icon type="warn" size="10" />
+      {{pwdCheckMsg}}
+    </view>
+      class="btn-class login-btn"
+    <view class="tip">体验账号：17777777777，密码：Aa123456</view> -->
+    <button
+    
+    class="btn-class login-btn"
+
+      bindtap="login"
+    >
+      {{name}}
+    </button>
+  </view>
+</view>

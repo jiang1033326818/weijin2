@@ -1,0 +1,69 @@
+.chat{
+  background: #ffffff;
+}
+.chat-w{
+  background: #f0f0f0;
+  height: 20rpx;
+  width: 100%;
+}
+.personchat{
+  /* height: 200rrpx; */
+  border-bottom:1px solid #f0f0f0;
+  width: 100%;
+  padding: 20rpx 15rpx; 
+  display: flex;
+  position: relative;
+}
+.chatimg{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.chatimg image{
+   /* height: 170rpx;
+  width: 120rpx; */
+  height:125rpx;
+  width:125rpx;
+  margin-top: 6rpx;
+}
+.charcon{
+  height: 130rpx;
+  width: 500rpx;
+  margin-left: 35rpx;
+}
+.chattop{
+  width: 100%;
+  height: 80rpx;
+}
+.chatname{
+  font-size: 35rpx;
+  font-weight: bold;
+  float: left;
+  line-height: 60rpx;
+}
+.chattime{
+  font-size: 25rpx;
+  float: right;
+   line-height: 60rpx;
+}
+.chatbottom{
+   width: 100%;
+}
+.chatcontent{
+  font-size: 25rpx;
+}
+.chatred{
+  position: absolute;
+  right: 100rpx;
+  bottom: 35rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background: red;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 30rpx;
+  font-weight: bold;
+}

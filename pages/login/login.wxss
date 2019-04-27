@@ -1,0 +1,94 @@
+/**login.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.login-contaner {
+  font-size: 33rpx;
+  margin-top: 100rpx;
+  width: 100%;
+}
+
+.login-item {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 40rpx 10rpx;
+  box-shadow: 0 3rpx #e9e6e6;
+}
+
+.login-item-label {
+  width: 25%;
+}
+
+.login-input-phone {
+  width: 300rpx;
+  padding: 0;
+  margin: 0;
+}
+
+.input-placeholder {
+  font-size: 30rpx;
+}
+
+.send-code-btn {
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 10rpx;
+  margin: 0;
+}
+
+.login-btn {
+  margin: 100rpx 40rpx 0;
+}
+
+.error-tip {
+  font-size: 25rpx;
+  color: red;
+  margin: 10rpx 40rpx 0;
+}
+
+.logo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 50rpx;
+  border-radius: 50%;
+  box-shadow: 0 1rpx 1rpx black;
+}
+
+.summary {
+  width: 100%;
+  font-size: 25rpx;
+
+}
+
+.no-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.try-btn {
+  width: 90%;
+  margin-top: 200rpx;
+}
+
+.tip {
+  font-size: 25rpx;
+  padding: 30rpx 40rpx 0;
+  color: gray;
+}

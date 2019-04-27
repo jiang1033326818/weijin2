@@ -1,0 +1,173 @@
+<view class="page">
+  <view class="navbar">
+    <block wx:for="{{tabs}}" wx:key="tabs">
+      <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+        <view class="navbar__title">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+  <swiper class='swiper' current="{{activeIndex}}" style='height:{{height}}rpx'>
+    
+
+      <swiper-item style='margin-top:80rpx'  class='swiper-item'>
+        <view class='allOfpeople'>
+          <scroll-view class="icon-list">
+            <view  class="row-flex list-item"  wx:for="{{getloanalllist}}"  >
+              <view class='toplist' bindtap="btn"data-bntuser="{{item.id}}"  >
+                <view class='leftlist'>
+                  <image class="item-header" src="{{'http://zadai.net:8000'+item.workImage}}" ></image>
+                  <!-- <image class='item-header' wx:for="{{managerlist}}">"{{item.image}}"</image> -->
+                </view>
+                <view class='rightlist'>
+                  <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?'':item.level}}</text>
+
+                  <view class='pink'>
+                    <text>{{item.workCompany===null?'':item.workCompany}}</text>
+                  </view>
+                   <view class='blue'>
+                    <text>{{item.hobby===null?'':item.hobby}}</text>
+                  </view>
+                </view>
+
+              </view>
+              <view class='bottomlist'>
+                  <view class='people'>
+                    <text>{{item.fwrs===null?0:item.fwrs}}人咨询过</text>
+                  </view>
+
+                  <view class='peoplebutton1' bindtap="btnphone" 
+                  data-id="{{item.id}}"  data-phonenum="{{item.mobile}}">
+                  电话咨询
+                  </view>
+                   <view class='peoplebutton2' bindtap="btnask"
+                   data-id="{{item.id}}"   data-uid='{{item.uid}}' data-img="{{'http://zadai.net:8000'+item.workImage}}" >
+                  咨询
+                  </view>
+              </view>
+
+            </view>
+          </scroll-view>
+        </view>
+      </swiper-item>
+        <swiper-item style='margin-top:80rpx'  class='swiper-item'>
+        <view class='allOfpeople'>
+          <scroll-view class="icon-list">
+            <view  class="row-flex list-item"  wx:for="{{getloanalllist}}"  >
+              <view class='toplist' bindtap="btn"data-bntuser="{{item.id}}" >
+                <view class='leftlist'>
+                  <image class="item-header" src="{{'http://zadai.net:8000'+item.workImage}}" ></image>
+                  <!-- <image class='item-header' wx:for="{{managerlist}}">"{{item.image}}"</image> -->
+                </view>
+                <view class='rightlist'>
+                  <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?'':item.level}}</text>
+
+                  <view class='pink'>
+                    <text>{{item.workCompany}}</text>
+                  </view>
+                   <view class='blue'>
+                    <text>{{item.hobby}}</text>
+                  </view>
+                </view>
+
+              </view>
+              <view class='bottomlist'>
+                  <view class='people'>
+                    <text>{{item.fwrs===null?0:item.fwrs}}人咨询过</text>
+                  </view>
+
+                  <view class='peoplebutton1' bindtap="btnphone" 
+                  data-id="{{item.id}}"  data-phonenum="{{item.mobile}}">
+                  电话咨询
+                  </view>
+                   <view class='peoplebutton2' bindtap="btnask"
+                   data-id="{{item.id}}"   data-uid='{{item.uid}}' >
+                  咨询
+                  </view>
+              </view>
+
+            </view>
+          </scroll-view>
+        </view>
+      </swiper-item>
+        <swiper-item style='margin-top:80rpx'  class='swiper-item'>
+        <view class='allOfpeople'>
+          <scroll-view class="icon-list">
+            <view  class="row-flex list-item"  wx:for="{{getloanalllist}}"  >
+              <view class='toplist' bindtap="btn"data-bntuser="{{item.id}}" >
+                <view class='leftlist'>
+                <image class="item-header" src="{{'http://zadai.net:8000'+item.workImage}}" ></image>
+                  <!-- <image class='item-header' wx:for="{{managerlist}}">"{{item.image}}"</image> -->
+                </view>
+                <view class='rightlist'>
+                  <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?'':item.level}}</text>
+
+                  <view class='pink'>
+                    <text>{{item.workCompany}}</text>
+                  </view>
+                   <view class='blue'>
+                    <text>{{item.hobby}}</text>
+                  </view>
+                </view>
+
+              </view>
+              <view class='bottomlist'>
+                  <view class='people'>
+                    <text>{{item.fwrs===null?0:item.fwrs}}人咨询过</text>
+                  </view>
+
+                  <view class='peoplebutton1' bindtap="btnphone" 
+                  data-id="{{item.id}}"  data-phonenum="{{item.mobile}}">
+                  电话咨询
+                  </view>
+                   <view class='peoplebutton2' bindtap="btnask"
+                   data-id="{{item.id}}"   data-uid='{{item.uid}}' >
+                  咨询
+                  </view>
+              </view>
+
+            </view>
+          </scroll-view>
+        </view>
+      </swiper-item>
+        <swiper-item style='margin-top:80rpx'  class='swiper-item'>
+        <view class='allOfpeople'>
+          <scroll-view class="icon-list">
+            <view  class="row-flex list-item"  wx:for="{{getloanalllist}}"  >
+              <view class='toplist' bindtap="btn"data-bntuser="{{item.id}}" >
+                <view class='leftlist'>
+                 <image class="item-header" src="{{'http://zadai.net:8000'+item.workImage}}" ></image>
+                  <!-- <image class='item-header' wx:for="{{managerlist}}">"{{item.image}}"</image> -->
+                </view>
+                <view class='rightlist'>
+                  <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?'':item.level}}</text>
+
+                  <view class='pink'>
+                    <text>{{item.workCompany}}</text>
+                  </view>
+                   <view class='blue'>
+                    <text>{{item.hobby}}</text>
+                  </view>
+                </view>
+
+              </view>
+              <view class='bottomlist'>
+                  <view class='people'>
+                    <text>{{item.fwrs===null?0:item.fwrs}}人咨询过</text>
+                  </view>
+
+                  <view class='peoplebutton1' bindtap="btnphone" 
+                  data-id="{{item.id}}"  data-phonenum="{{item.mobile}}">
+                  电话咨询
+                  </view>
+                   <view class='peoplebutton2' bindtap="btnask"
+                   data-id="{{item.id}}"   data-uid='{{item.uid}}' >
+                  咨询
+                  </view>
+              </view>
+
+            </view>
+          </scroll-view>
+        </view>
+      </swiper-item>
+  </swiper>
+</view>

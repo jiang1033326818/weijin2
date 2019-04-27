@@ -1,0 +1,247 @@
+/* pages/cooperation/cooperation.wxss */
+.pages{
+  width: 100%;
+}
+.topimg{
+  width: 100%;
+  
+}
+.topimg image{
+  width: 100%;
+  height: 321rpx;
+}
+.topbutton{
+  display: flex;
+}
+.topbutton0{
+ width:43%;
+height:92rpx;
+color:#ffffff;
+background:#ffba00;
+border-radius:10rpx;
+text-align:center;
+line-height:92rpx;
+font-size:34rpx;
+margin-left:4%;
+/* font-weight: bold; */
+}
+.topbutton1{
+  width:43%;
+height:92rpx;
+color:#ffffff;
+background:#236af6;
+border-radius:10rpx;
+text-align:center;
+line-height:92rpx;
+font-size:34rpx;
+margin-left:5%;
+/* font-weight: bold; */
+
+}
+.apply{
+  margin-top: 30rpx;
+  padding: 0 3%;
+}
+.applyb{
+  font-size:45rpx;
+font-weight:bold;
+margin-top:22px;
+text-align: center;
+width: 100%;
+color: #236af6;
+}
+.applys{
+    font-size:25rpx;
+color:#ffba00;
+/* margin-left:235rpx; */
+margin-top:10rpx;
+text-align: center;
+
+}
+.applyform{
+  margin-top: 30rpx;
+  padding: 0 3%;
+}
+.applyform0{
+  display: flex;
+  height: 100rpx;
+  margin-top: -5rpx;
+}
+.applyform0 view{
+  width:15%;
+font-size:28rpx;
+line-height:62rpx;
+margin-left:91rpx;
+
+
+}
+.applyform0 view text{
+  color: red;
+}
+.applyform0 input{
+ width:56%;
+border-radius:19rpx;
+border:1px solid #dddddd;
+height:66rpx;
+font-size:26rpx;
+padding-left:15rpx;
+
+}
+.dizhi{
+   width:59%;
+border-radius:19rpx;
+border:1px solid #dddddd;
+height:66rpx;
+
+   
+}
+
+.viewtext{
+  height: 80rpx;
+  font-size: 26rpx;
+line-height: 64rpx;
+color: #236af6;
+ display:block; /*这里设置inline-block或者block；根据使用情况来定（行内元素需要加这个，块级元素和行内块级可以不用）*/
+
+ white-space:nowrap;
+
+ overflow:hidden;
+
+ text-overflow:ellipsis;
+margin-left:10rpx;
+
+}
+.dizhi image{
+  width:50rpx;
+height:40rpx;
+float:right;
+margin-right:3%;
+margin-top:12rpx;
+
+}
+.applybutton{
+  width:70%;
+height:92rpx;
+color:#ffffff;
+background:#236af6;
+border-radius:10rpx;
+text-align:center;
+line-height:92rpx;
+font-size:35rpx;
+margin-left:15%;
+margin-top:2rpx;
+font-weight:bold;
+margin-bottom: 30rpx;
+
+}
+
+
+.introduce{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+margin-top: 50rpx;
+}
+.introduce image{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 1100rpx;
+}
+
+
+.advantage{
+  width: 100%;
+  padding: 20rpx 3%;
+}
+.youshirel{
+  width: 94%;
+  height: 430rpx;
+}
+.youshiabs{
+  width:200rpx;
+height:220rpx;
+float:left;
+margin-left:3.7%;
+text-align:center;
+margin-top:-5rpx;
+}
+.youshiimg{
+width: 150rpx;
+height: 150rpx;
+margin-left: 25rpx;
+margin-top: 25rpx;
+}
+.youshiimg image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.youshiabs view{
+  font-size:25rpx;
+text-align:146rpx;
+
+
+}
+.hangyeyoushi{
+  width: 100%;
+  padding: 20rpx 3%;
+}
+.youshicon{
+  width: 44%;
+  text-align: center;
+  float: left;
+  margin-left: 3%;
+  margin-top: 30rpx;
+}
+.youshicon image{
+ width:75%;
+height:250rpx;
+}
+.contitle{
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.concon{
+  font-size: 21rpx;
+  text-indent:38rpx;
+}
+
+ 
+.view_1{
+  margin-top:20rpx;
+   /* border: 1px solid black; */
+   background: #dddddd;
+  width:95%;
+  margin-left: -4rpx;
+  position: relative;
+  
+ 
+  margin-bottom:-12rpx; 
+}
+.view_1 image{
+   width:220rpx;
+  height: 220rpx;
+  margin-top:15rpx; 
+  padding-left:16rpx; 
+}
+.text_1{
+font-size:29rpx;
+line-height:20rpx;
+position:absolute;
+top:27rpx;
+left:260rpx;
+font-weight:bold;
+}
+.text_2{
+font-size: 23rpx;
+position: absolute;
+top:68rpx;
+left:259rpx;
+line-height:33rpx;
+}
+.tisheng{
+  width: 96%;
+  height: 390rpx;
+  margin-top:20rpx; 
+  margin-left: -5rpx;
+}

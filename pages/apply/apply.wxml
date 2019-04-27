@@ -1,0 +1,158 @@
+<!--pages/apply/apply.wxml-->
+<view class='apply'>
+  
+<view class='huise'></view>
+
+
+<view class='item'>
+  <view class='left'>真实姓名</view>
+  <view class='right'>
+    <input placeholder='请填写真实姓名' bindchange='name' value='{{name}}' ></input>
+  </view>
+</view>
+<view class='item'>
+  <view class='left'>当前年龄</view>
+  <view class='right'>
+    <input placeholder='请填写您的当前年龄' bindchange='age' value='{{age}}'></input>
+  </view>
+</view>
+
+ <view class='item'>
+  <view class='left'>职业身份</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <text style='color:#437EF8'>{{array[index]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+ <view class='item'>
+  <view class='left'>工资发放形式</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange2" value="{{index}}" range="{{array2}}">
+      <text style='color:#437EF8'>{{array2[index2]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+
+<view class='item'>
+  <view class='left'>现金收入/月(元)</view>
+  <view class='right'>
+    <input placeholder='0' bindchange='money' value='{{money}}'></input>
+  </view>
+</view>
+
+<view class='item'>
+  <view class='left'>能连续提供几个月流水</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange3" value="{{index}}" range="{{array3}}">
+      <text style='color:#437EF8'>{{array3[index3]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='item'>
+  <view class='left'>当前工作工龄</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange4" value="{{index}}" range="{{array4}}">
+      <text style='color:#437EF8'>{{array4[index4]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='item'>
+  <view class='left'>就职公司类型</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange5" value="{{index}}" range="{{array5}}">
+      <text style='color:#437EF8'>{{array5[index5]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='huise'></view>
+
+<view class='item'>
+  <view class='left'>是否有本地福利2</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange6" value="{{index}}" range="{{array6}}">
+      <text style='color:#437EF8'>{{array6[index6]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='item'>
+  <view class='left'>是否有本地福利1</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange7" value="{{index}}" range="{{array7}}">
+      <text style='color:#437EF8'>{{array7[index7]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='item'>
+  <view class='left'>本地福利1连续缴存时间</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange8" value="{{index}}" range="{{array8}}">
+      <text style='color:#437EF8'>{{array8[index8]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='item'>
+  <view class='left'>名下房产类型</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange9" value="{{index}}" range="{{array9}}">
+      <text style='color:#437EF8'>{{array9[index9]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='item'>
+  <view class='left'>名下是否有车</view>
+  <view class='right'>
+   <picker bindchange="bindPickerChange10" value="{{index1}}" range="{{array10}}">
+      <text style='color:#437EF8'>{{array10[index10]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view> 
+</view>
+
+<view class='huise'></view>
+
+<view class='item'>
+  <view class='left'>手机号</view>
+  <view class='right'>
+    <input placeholder='请填写您的手机号码' value='{{phone}}' bindchange='phone' ></input>
+  </view>
+</view>
+
+<view class='item'>
+  <view class='right2'>
+    <input placeholder='请输入手机验证码' value='{{phonecode}}' bindchange='phonecode'></input>
+    <button class='{{huoqu}}' disabled='{{disabled}}' data-id="2" bindtap="getVerificationCode" >{{time}}</button>
+  </view>
+</view>
+
+<view class='huise'></view>
+
+<view class='yesyes'>
+<checkbox-group  bindchange='checked'>
+<checkbox value="" checked="{{checked}}"  />
+   
+</checkbox-group>
+<view>我已同意微金网  <text style='color:#236AF6'>《微金顾问入驻协议》</text></view>
+</view>
+
+<view class='queding' bindtap='subme'>提交</view>
+
+</view>

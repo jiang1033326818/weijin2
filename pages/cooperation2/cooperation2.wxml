@@ -1,0 +1,218 @@
+<!--pages/cooperation/cooperation.wxml-->
+<view class='pages'>
+  <view class='topimg'>
+    <image src='http://zadai.net:8000/uploads/hezuo.jpg'></image>
+
+    <view class='topbutton'>
+      <view class='topbutton0' bindtap="btn1">成为合伙人</view>
+      <view class='topbutton1' bindtap="bindtap1">咨询</view>
+    </view>
+  </view>
+
+  <view class='apply'>
+    <view class='applyb'>微金网合伙人申请</view>
+
+
+    <view class='applyform'>
+      <view class='applyform0'>
+        <view>姓名
+          <text>*</text> </view>
+        <input placeholder='请输入您的姓名' bindchange='name' bindinput='workbtn1'></input>
+      </view>
+
+      <view class='applyform0'>
+        <view>手机
+          <text>*</text> </view>
+        <input placeholder='请输入手机号' bindchange='phone' bindinput='workbtn2'></input>
+      </view>
+
+      <view class='applyform0'>
+        <view>地址
+          <text>*</text> </view>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class='dizhi' bindinput=' workbtn3'>
+          <h3 class='viewtext' style='width:80%;float:left'>{{region[0]}}，{{region[1]}}，{{region[2]}}</h3>
+          <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+
+
+
+      </view>
+
+      <view class='applyform0'>
+        <view>备注
+          <text>*</text> </view>
+        <input bindchange='beizhu' bindinput='workbtn4'></input>
+      </view>
+
+      <view class='applybutton' bindtap='workbtn'>合伙人申请</view>
+      <view class='applys'>申请后请耐心等待,工作人员会在24小时内联系您</view>
+    </view>
+  </view>
+
+  <view class='introduce'>
+
+    <h4 class='applyb'>微金网合伙人介绍</h4>
+    <view>
+      从事多年Finance行业的微金网全体员工一直有一个心愿：让Finance更智能，让trading更简单。让trading双方可以无限接近，在节约成本的同时简化流程。
+    </view>
+    <view>
+      微金网以标准化连锁服务、学校式培训服务、专业化创业服务和统一管理为特色，建立可复制的标准化企业运营模式，让用户在全国的每一家微金网服务中心，都能体会到科技Finance的便捷式服务。微金网项目将继续致力于为资本市场的智能化、规范化、简单化贡献自己更多的力量。
+    </view>
+    <view>公司预计2018年业务覆盖国内多数重要省会城市，链接更多品类Finance产品，产品金额不少于50亿，总trading额不低于30亿，并以20%的增长稳步发展，2-3年内实现trading额百亿的目标。</view>
+
+    <view>微金网不追求快速扩张，而要做到对每一笔trading负责，也对每一个参与到微金网项目的合作伙伴负责。而在不久的将来，微金网项目将成为金Finance服务平台中的翘楚，引领智能Finance服务走向新纪元。</view>
+
+
+  </view>
+
+  <view class='advantage'>
+  <view class='applyb'>核心优势</view>
+
+  <view class='youshirel'>
+  <view class='youshiabs'>
+  
+  <view class='youshiimg'>
+  <image src='http://zadai.net:8000/uploads/document.png'></image>
+  </view>
+  <view>服务标准化</view>
+  
+  </view>
+  
+  <view class='youshiabs'>
+  <view class='youshiimg'>
+  <image src='http://zadai.net:8000/uploads/document.png'></image>
+  </view>
+  <view>产品标准化</view>
+  </view>
+
+  <view class='youshiabs'>
+  <view class='youshiimg'>
+  <image src='http://zadai.net:8000/uploads/document.png'></image>
+  </view>
+  <view>管理标准化</view>
+  </view>
+
+  <view class='youshiabs'>
+  <view class='youshiimg'>
+  <image src='http://zadai.net:8000/uploads/document.png'></image>
+  </view>
+  <view>运营标准化</view>
+  </view>
+
+  <view class='youshiabs'>
+  <view class='youshiimg'>
+  <image src='http://zadai.net:8000/uploads/document.png'></image>
+  </view>
+  <view>模式标准化</view>
+  </view>
+
+  <view class='youshiabs'>
+  <view class='youshiimg'>
+  <image src='http://zadai.net:8000/uploads/document.png'></image>
+  </view>
+  <view>成功可复制</view>
+  </view>
+  </view>
+  </view>
+
+
+  <view class='hangyeyoushi'>
+  <view class='applyb'>微金优势</view>
+
+  <view class='youshicon'>
+  <view class='contitle'>运营优势</view>
+  &lt;!&ndash; <image src='http://zadai.net:8000/uploads/youshi/ad001.jpg'></image> &ndash;&gt;
+  <image src='http://zadai.net:8000/uploads/yy.png'></image>
+  <view class='concon'>
+  微金网门店运营体系，通过对日常运营指标的设定、监督与管理，及时纠正其他管理人的问题，降低各管理人发生失误概率，确保及时发现失误并修正，以确保门店正常运行。
+  </view>
+  </view>
+
+  <view class='youshicon'>
+  <view class='contitle'>优势</view>
+  &lt;!&ndash; <image src='http://zadai.net:8000/uploads/youshi/ad001.jpg'></image> &ndash;&gt;
+  <image src='http://zadai.net:8000/uploads/gold.png'></image>
+  <view class='concon'>
+  总部拥有良好的能力为合伙人提供最完善的Finance行业营销解决方案， 根据市场需求为合伙人提供极具竞争力的Finance产品，使产品赢得用户的广泛青睐，帮助合伙人牢牢抓住客户资源。
+  </view>
+  </view>
+
+  <view class='youshicon'>
+  <view class='contitle'>顾问咨询系统</view>
+  &lt;!&ndash; <image src='http://zadai.net:8000/uploads/youshi/ad001.jpg'></image> &ndash;&gt;
+  <image src='http://zadai.net:8000/uploads/zx.png'></image>
+  <view class='concon'>
+  微金网首创Finance行业顾问咨询服务，顾问均为各大银行和Finance机构的资深从业者，可以快速解决客户疑问，提升品牌竞争力
+  </view>
+  </view>
+
+  <view class='youshicon'>
+  <view class='contitle'>CRM管理系统</view>
+  &lt;!&ndash; <image src='http://zadai.net:8000/uploads/youshi/ad001.jpg'></image> &ndash;&gt;
+  <image src='http://zadai.net:8000/uploads/crm.png'></image>
+  <view class='concon'>
+  微金网专业的Finance业务管理系统，帮助合伙人进行专业化的管理，提高工作效率。
+  </view>
+  </view>
+
+  <view style='clear:both'></view>
+
+  <view class='applyb'>加入我们能得到什么</view>
+
+  
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content001.jpg'></image>
+  <text class='text_1'>培训支持</text>
+  <text class='text_2'>总部定期针对合伙人的人员需求开展产品、销售、售后、管理等相关培训,给予合伙人人公司落地扶持,帮助合伙人建立完善的企业文化,打造核心竞争力。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content002.jpg'></image>
+  <text class='text_1'>资源支持</text>
+  <text class='text_2'>稳定的渠道、丰富的产品类型以及千万级广告投放市场支持、海量销售线索提供、区域独家广告投放权。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content003.jpg'></image>
+  <text class='text_1'>媒体支持</text>
+  <text class='text_2'>公众号助推、线下活动推广、官网推广、网络新闻推广、优秀案例包装。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content004.jpg'></image>
+  <text class='text_1'>物料支持</text>
+  <text class='text_2'>总部定期或不定期根据合伙人业务开展情况给予合伙人提供物料支持,助力合伙人公司业绩腾飞。。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content005.jpg'></image>
+  <text class='text_1'>技术支持</text>
+  <text class='text_2'>微金网总部对合伙人提供7X24小时技术服务支持,保障合伙人公司运营过程中所遇问题能够得到高效、快速的解决。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content006.jpg'></image>
+  <text class='text_1'>公众形象</text>
+  <text class='text_2'>微金网总部结合合伙人自身需求及平台对外统一形象为合伙人量身定制符合自身的对外公众形象,打造合伙人自身IP。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content007.jpg'></image>
+  <text class='text_1'>潜在客户</text>
+  <text class='text_2'>微金网平台结合自身深厚的行业背景及人工智能系统,辅助合伙人对所在区域及符合要求的潜在客户进行发掘,拓宽合伙人业务渠道。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content008.jpg'></image>
+  <text class='text_1'>公司管理</text>
+  <text class='text_2'>微金网总部定期或不定期对合伙人公司管理层进行培训指导,及时发现公司管理中的问题并进行有效解决,减少合伙人公司日常管理中的失误。</text>
+  </view>
+  <view class='view_1'>
+  <image src='http://zadai.net:8000/uploads/content009.jpg'></image>
+  <text class='text_1'>政策指导</text>
+  <text class='text_2'>微金网平台总部随时根据相应的国家政策、平台资方以及平台自身发展政策,对合伙人进行通报解读,保证合伙人实时掌握行业及平台最新变化,降低运营风险。</text>
+  </view>
+  <image class='tisheng' src='http://zadai.net:8000/uploads/tisheng.jpg'></image>
+  <view style='clear:both'></view>
+
+
+  </view>
+
+
+  <view class='applybutton' bindtap="goTop">合伙人申请</view>
+
+
+</view>

@@ -1,0 +1,84 @@
+<view class="page">
+  <view class="phone_one">
+    <view bindtap="clickPerson" class="phone_two1">
+      <view class="phone_personal">{{firstPerson}}</view>
+      <image src="http://zadai.net:8000/uploads/right.png" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image>
+    </view>
+    <view bindtap="clickPerson2" class="phone_two">
+      <view class="phone_personal">{{firstPerson2}}</view>
+      <image src="http://zadai.net:8000/uploads/right.png" class="personal_image {{selectArea2 ? 'rotateRight' :''}}"></image>
+    </view>
+  </view>
+
+
+  <view class="person_box" wx:for="{{getarea1}}">
+    <view class="phone_select" hidden="{{selectPerson}}">
+     <view class="select_one" bindtap="mySelect" data-me="{{'全国'}}" >{{"全国"}}</view> 
+       <view class="select_one" bindtap="mySelect" data-me="{{item.area}}" wx:for="{{getarea1}}">{{item.area}}</view> 
+
+    </view>
+  </view>
+  <view class="person_box">
+    <view class="phone_select" hidden="{{selectPerson2}}">
+      <view class="select_one" bindtap="mySelect2" data-me="所有服务">所有服务</view>
+           <view class="select_one" bindtap="mySelect2" data-me="房产服务">房产服务</view>
+      <view class="select_one" bindtap="mySelect2" data-me="车产服务">车产服务</view>
+      <view class="select_one" bindtap="mySelect2" data-me="信用卡">信用卡</view>
+      <view class="select_one" bindtap="mySelect2" data-me="极速服务">极速服务</view>
+      <view class="select_one" bindtap="mySelect2" data-me="工资流水服务">工资流水服务</view>
+
+      <view class="select_one" bindtap="mySelect2" data-me="社保服务">社保服务</view>
+
+      <view class="select_one" bindtap="mySelect2" data-me="营业执照服务">营业执照服务</view>
+
+      <view class="select_one" bindtap="mySelect2" data-me="公积金服务">公积金服务</view>
+
+      <view class="select_one" bindtap="mySelect2" data-me="自存流水服务">自存流水服务</view>
+
+      <view class="select_one" bindtap="mySelect2" data-me="按揭房服务">按揭房服务</view>
+      <view class="select_one" bindtap="mySelect2" data-me="按揭车服务">按揭车服务</view>
+      <view class="select_one" bindtap="mySelect2" data-me="保单服务">保单服务</view>
+
+
+    </view>
+  </view>
+
+
+  <view class='qqqqq' >
+   <view wx:for="{{managerlists}}" class="wwwww row-flex list-item">
+    <view class='toplist' data-manger="{{item.id}}" bindtap="toone">
+      <view class='leftlist'>
+        <image src="{{'http://zadai.net:8000'+item.workImage}}" class="item-header"></image>
+      </view>
+      <view class='rightlist'>
+        <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName===null?'':item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?'':item.level}}</text>
+
+        <view class='pink'>
+          <text>{{item.workCompany===null?'':item.workCompany}}</text>
+        </view>
+        <view class='blue'>
+          <text>{{item.hobby===null?'':item.hobby}}</text>
+        </view>
+      </view>
+
+    </view>
+    <view class='bottomlist'>
+      <view class='people'>
+        <text>{{item.fwrs===null?0:item.fwrs}}人咨询过</text>
+      </view>
+
+      <!-- <view class='peoplebutton1' bindtap="callphone1" data-id="{{item.id}}" data-phonenum="{{item.mobile}}">
+        电话咨询
+      </view> -->
+      <view class='peoplebutton2' bindtap="askpeople" data-id="{{item.id}}" data-uid="{{item.uid}}" data-img="{{'http://zadai.net:8000'+item.workImage}}">
+       立即咨询
+      </view>
+    </view>
+
+  </view>
+  </view>
+
+ 
+</view>
+
+

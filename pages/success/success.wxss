@@ -1,0 +1,31 @@
+/* pages/success/success.wxss */
+.page{
+  text-align: center;
+}
+.page image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 150rpx;
+}
+.gongxi{
+  font-size:45rpx;
+  /* font-weight: bold; */
+  margin-top: 50rpx 
+}
+.con{
+   font-size:35rpx;
+  /* font-weight: bold; */
+  margin-top: 50rpx;
+  padding: 0 3%;
+}
+.button{
+  margin-top: 50rpx;
+  width: 70%;
+  margin-left: 15%;
+  height: 80rpx;
+  background: #1296DB;
+  border-radius: 10rpx;
+  color: #ffffff;
+  line-height: 80rpx;
+
+}

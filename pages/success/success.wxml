@@ -1,0 +1,12 @@
+<!--pages/success/success.wxml-->
+<view class='page'>
+  <image src='http://zadai.net:8000/uploads/success.png'></image>
+  <view class='gongxi'>恭喜您</view>
+  <view class='con'>
+  入驻申请成功,客服正在审核中,请保持电话通畅,审核结果我们会第一时间推送给您,如有疑问请拨打010-86390610
+  </view>
+
+
+
+  <view class='button' bindtap='tohome'>返回首页</view>
+</view>

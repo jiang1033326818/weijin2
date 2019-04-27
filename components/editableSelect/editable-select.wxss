@@ -1,0 +1,29 @@
+/* components/editableSelect/editable-select.wxss */
+.es-container {
+  display: flex;
+}
+
+.es-input {
+  padding: 0 0rpx;
+}
+
+.s-container {
+  width: 60%;
+  height: 300rpx;
+  background: white;
+  position: absolute;
+  z-index: 111;
+  margin-left: -40rpx;
+  border: 1rpx solid #eeeeee;
+  overflow: hidden;
+}
+
+.select-item {
+  padding: 10rpx 40rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.select-item:active {
+  background: gray;
+  font-weight: bold;
+}

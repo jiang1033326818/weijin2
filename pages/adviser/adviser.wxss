@@ -1,0 +1,110 @@
+/* pages/adviser/adviser.wxss */
+.item{
+  width: 100%;
+  /* margin-top: 10rpx;  */
+  font-size: 30rpx;
+  display: flex;
+  height: 80rpx;
+  border-bottom: 1px solid #DBDBDB;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  text-align: right;
+}
+.item0{
+  width: 100%;
+  font-size: 30rpx;
+  display: flex;
+  height: 20rpx;
+  border-bottom: 1px solid #DBDBDB;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.left{
+  padding-left: 30rpx;
+  color: 000;
+  font-size: 30rpx;
+}
+.right{
+  padding-right: 30rpx;
+  color: #000;
+}
+.right image{
+  height: 35rpx;
+  width: 35rpx;
+  margin-top: 10rpx;
+}
+.right text{
+  margin-right: 10rpx;
+  font-size: 26rpx;
+  line-height: 15rpx;
+}
+.right input{
+  margin-right: 20rpx;
+  float: right;
+}
+
+/* .weui-uploader__img{
+  width: 750rpx;
+  height: 750rpx;
+  margin: 0 auto;
+} */
+
+
+.weui-cell__bd{
+  text-align: center;
+  padding: 0  260rpx;
+} 
+
+.small{
+  padding: 20rpx 3%;
+}
+.small view{
+  font-size: 25rpx;
+}
+
+.yesyes{
+  display: flex;
+  padding: 20rpx 3%;
+  background: #f0f0f0;
+}
+.yesyes view{
+  font-size: 27rpx;
+  margin-top: 5rpx;
+}
+.queding{
+  width: 100%;
+  height: 100rpx;
+  font-size: 40rpx;
+  color: #ffffff;
+  background: #236AF6;
+  line-height: 100rpx;
+  text-align: center;
+}
+::-webkit-input-placeholder{
+    text-align: right;
+}
+:-ms-input-placeholder{
+   text-align: right;
+}
+:-moz-placeholder{
+  text-align: right;
+}
+::-moz-placeholder{
+  text-align: right;
+}
+.zp{
+  width: 400rpx;
+  height: 200rpx;
+  position: absolute;
+ left:-117rpx;
+ top:9rpx;
+
+}
+.btn1{
+  height: 220rpx;
+  position: relative;
+}

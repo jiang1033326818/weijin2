@@ -1,0 +1,3 @@
+<!--pages/knowdetails2/knowdetails2.wxml-->
+
+<rich-text nodes="{{knoweldgelist}}"></rich-text>

@@ -1,0 +1,92 @@
+<!--pages/phonetel/phonetel.wxml
+  姜海鵬 2019.1月11
+-->
+<view class='phonepage'>
+  <view class='imagehigh'>
+    <image src='http://zadai.net:8000/uploads/phonetitle.jpg'></image>
+  </view>
+
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange" >
+    <block wx:for-items="{{actionSheetItems}}" >
+      <action-sheet-item bindtap="bind{{item.bindtap}}"  data-itemnum="{{item.key}}" data-itemnum2="{{item.txt}}">{{item.txt}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  </action-sheet>
+
+
+  <view class='choice'>
+    <text class='phonetime'>服务时间:9:00~21:00</text>
+    <view class='typephone'>
+      <text class='phonetime2'>服务类型:</text>
+      <!-- <view class="login-input-phone" bindtap='actionSheetTap'>
+        <input value="{{menu2}}"  type="text" placeholder="请选择服务类型" bindinput='servetype1'></input>
+        <image src='http://zadai.net:8000/uploads/right.png'></image>
+      </view> -->
+      <view class="login-input-phone">
+   <picker  bindchange="righttype222"  value="{{index}}" range="{{actionSheetItems}}" >
+       <view  class='viewclass' style='color:#437EF8' data-actionnum="{{index}}" >{{actionSheetItems[index]}}</view>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+    </picker>
+      
+  </view> 
+    </view> 
+    <!-- <view class="login-input-phone">
+   <picker bindchange="righttype" value="{{index}}" range="{{righttype}}">
+      <text style='color:#437EF8'>{{righttype[index]}}</text>
+    <image src='http://zadai.net:8000/uploads/right.png'></image>
+        </picker>
+  </view>  -->
+
+    <view class='typephone'>
+      <text class='phonetime2'>接听手机:</text>
+      <view class="login-input-phone">
+        <input type="phone" placeholder="请输入手机号码" bindinput='phoneint'></input>
+      </view>
+    </view>
+
+    <button class="btn-class login-btn" style='background:#1B65FA' bindtap="gogogo">
+      提交
+    </button>
+
+    <modal hidden="{{hidden}}" title="" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+
+      <view class='newmodal'>
+        <image src='http://zadai.net:8000/uploads/formok.png'></image>
+        <view>提交成功</view>
+        <text>顾问助理会在10分钟内联系您,请保持电话通畅</text>
+      </view>
+    </modal>
+  </view>
+
+
+  <view class='maplist'>
+    <view  class="row-flex list-item">
+      <view class='toplist' wx:for="{{getplmessage}}">
+        <view class='toptitle'>
+          <view class='toptitle1' style='font-size:30rpx'>
+            <view class='circul'>
+              <image src='{{item.image}}'>
+              </image>
+            </view>
+            {{item.mobile}}
+            <!-- <view class='rightmap'>{{item.status}}</view> -->
+               <view class='rightmap'
+               style='color:{{item.status==="1"?"#FE6F61":item.status==="2"?"#1B65FA":"black"}}'>{{item.status==="1"?"很满意":item.status==="2"?"满意":"一般"}}</view>
+          </view>
+          <view class='toptitle2'>
+            <!-- {{item.label}} -->
+          </view>
+          <view class='clear'></view>
+        </view>
+
+        <view class='context'>
+          {{item.content}}
+        </view>
+        <view class='context2'>
+          服务顾问: {{item.nikeName}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

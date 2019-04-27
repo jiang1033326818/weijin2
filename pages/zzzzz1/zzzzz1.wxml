@@ -1,0 +1,4 @@
+<!--pages/zzzzz1/zzzzz1.wxml-->
+<view>
+  <web-view src="https://cardloan.xiaoying.com/h5/user/shareLink?source=100010071&inviterUid=111397270756278278&couponSource=1004"></web-view>
+</view>
