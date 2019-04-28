@@ -532,3 +532,9 @@ text-overflow: ellipsis;
   top: -1rpx;
   left:-10rpx;
 }
+
+.xieyi{
+  font-size: 25rpx;
+  width: 100%;
+  text-align: center;
+}

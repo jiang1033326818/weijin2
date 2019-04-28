@@ -44,7 +44,7 @@
 
   <view class='belong'>
     <view class='belongb'>顾问擅长</view>
-    <view class='belongs'>{{belong}}</view>
+   <view class='belongs'>{{useradviceid.hobby}}</view>
   </view>
 
 

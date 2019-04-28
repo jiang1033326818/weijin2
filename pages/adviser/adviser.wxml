@@ -116,7 +116,7 @@
 <checkbox value="" checked="{{checked}}"  />
    
 </checkbox-group>
-<view>我已同意微金网  <text style='color:#236AF6'>《微金顾问入驻协议》</text></view>
+<view>我已同意微金网  <text style='color:#236AF6'  bindtap='toxieyi' >《微金顾问入驻协议》</text></view>
 </view>
 
 <view class='queding' bindtap='subme'>确定</view>
