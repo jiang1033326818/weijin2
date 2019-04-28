@@ -4,8 +4,7 @@
 <view class='detailspage' >
   <view class='detailscard' style="background-image:url('http://zadai.net:8000/uploads/personbgg.png')">
     <view class='cardtop'>
-
-      <view class='circle'>
+  <view class='circle'>
         <!-- <image src='http://zadai.net:8000/uploads/header/head0.jpg'></image> -->
         <image src="{{'http://zadai.net:8000'+useradviceid.workImage}}"></image>
       </view>
@@ -15,7 +14,7 @@
           <view class='heads'>{{useradviceid.workCompany===null?'':useradviceid.workCompany}}</view>
       </view>
       <view class='headbs'>
-        <view class='headb'>{{useradviceid.hobby===null?'':useradviceid.hobby}}</view>
+        <!-- <view class='headb'>{{useradviceid.workCompany===null?'':useradviceid.workCompany}}</view> -->
         <view class='heads'>{{useradviceid.level===null?'':useradviceid.level}}</view>
       </view>
 

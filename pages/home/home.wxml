@@ -116,7 +116,7 @@
           <view wx:for="{{getknowledge}}" class="row-flex list-item">
             <view class='toplist2' bindtap='toapply2'  data-id="{{item.id}}" >
               <view class='knowledge' >
-                <image src='{{"http://zadai.net:8000/uploads"+item.image}}'></image>
+                <image src='{{"http://zadai.net:8000"+item.image}}'></image>
               </view>
 
               <view class='knowledge_r'>

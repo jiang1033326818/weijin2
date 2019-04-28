@@ -31,7 +31,7 @@ view , page {
 }
 
 .toplist{
-  height: 220rpx;
+  height: 255rpx;
   padding-top: 15rpx;
   /* padding-top: 100rpx; */
   border-bottom: 1px solid #f0f0f0;
@@ -84,6 +84,14 @@ color: #f3918f;
 .blue text{
 font-size: 27rpx;
 color: #8daff3; 
+display: -webkit-box;
+overflow: hidden;
+text-overflow: hidden;
+word-break: break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp:2; 
+height: 80rpx;
+width: 250rpx
 }
 .people{
  
