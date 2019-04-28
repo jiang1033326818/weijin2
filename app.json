@@ -1,10 +1,9 @@
 {
   "pages": [
-        "pages/cooperation/cooperation",
     "pages/login/login",
     "pages/achievement/achievement",
     "pages/expert/expert",
-
+      "pages/cooperation/cooperation",
     "pages/cooperation2/cooperation2",
     "pages/myadvice/myadvice",
     "pages/home/home",

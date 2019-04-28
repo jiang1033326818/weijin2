@@ -44,7 +44,7 @@ Page({
   goTop: function (e) {  // 一键回到顶部
     if (wx.pageScrollTo) {
       wx.pageScrollTo({
-        scrollTop: 300
+        scrollTop: 200
       })
     } else {
       wx.showModal({
