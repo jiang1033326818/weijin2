@@ -19,10 +19,11 @@ view , page {
 
 
 .row-flex{
-  width: 95%;
-  /* height: 350rpx; */
+  border-bottom: 1rpx solid #ddd;
+  /* width: 95%; */
   height: 100%;
-  margin-left: 2.5%;
+  /* margin-left: 2.5%; */
+  width: 100%;
   margin-top: 10rpx;
   background: #ffffff;
   border-radius: 10rpx;
@@ -31,7 +32,7 @@ view , page {
 }
 
 .toplist{
-  height: 255rpx;
+  height: 220rpx;
   padding-top: 15rpx;
   /* padding-top: 100rpx; */
   border-bottom: 1px solid #f0f0f0;
@@ -48,8 +49,11 @@ margin-top:15rpx;
 
 }
 .item-header{
-  width: 160rpx;
-  height: 160rpx;
+  /* width: 160rpx;
+  height: 160rpx; */
+  width:135rpx;
+height:116rpx;
+
   
 }
 .rightlist{
@@ -63,27 +67,29 @@ margin-top:15rpx;
 
 }
 .pink{
-  margin-top: 30rpx;
- /* background: #ffccff; */
+  margin-top: 6rpx;
+  background:#fda803; 
   /* width: 100rpx; */
-  width: 180rpx;
+  /* width: 500rpx; */
+  overflow: hidden;
   /* text-align: center; */
-  height: 45rpx;
+  height: 40rpx;
 }
 .pink text{
 font-size: 27rpx;
-color: #f3918f;
+color: white;
+padding-left:13rpx;
+padding-right:13rpx;
 }
 .blue{
-  margin-top: 8rpx;
- /* background: #ccffff; */
+  margin-top: 10rpx;
   width: 250rpx;
-  /* text-align: center; */
   height: 45rpx;
 }
 .blue text{
 font-size: 27rpx;
-color: #8daff3; 
+/* color: #8daff3;  */
+color: #a4a4a4;
 display: -webkit-box;
 overflow: hidden;
 text-overflow: hidden;
@@ -91,7 +97,7 @@ word-break: break-all;
 -webkit-box-orient: vertical;
 -webkit-line-clamp:2; 
 height: 80rpx;
-width: 250rpx
+width: 500rpx;
 }
 .people{
  
@@ -103,8 +109,8 @@ width: 250rpx
 .people text{
   line-height: 65rpx;
   position: absolute;
- top:-219rpx;
-right:-505rpx;
+ top:-72rpx;
+right:-362rpx;
 
 }
 .peoplebutton1{
@@ -126,18 +132,19 @@ right:-505rpx;
 width:25%;
 height:65rpx;
 /* margin-top:20rpx; */
-border:2px solid #1B68FB;
+/* border:2px solid #1B68FB;
 border-radius:10rpx;
-background:#1B68FB;
+background:#1B68FB; */
 font-size:28rpx;
 font-weight:bold;
 text-align:center;
 line-height:65rpx;
 float:left;
-color: white;
-position: absolute;
-top:-103rpx;
-left:490rpx;
+color:#1B68FB;
+position:absolute;
+top:-72rpx;
+left:160rpx;
+
 
 }
 
@@ -151,6 +158,9 @@ left:490rpx;
     line-height:100rpx;
     text-align: center;
     background-color: #ffffff;
+    /* font-weight:bold; */
+    font-size:28rpx;
+
 }
 .phone_one{
     display: flex;
@@ -223,4 +233,7 @@ left:490rpx;
 .bottomlist{
   /* height: 110rpx; */
   position: relative;
+  border-bottom: 1rpx solid #ddd;
+  margin-top:77rpx;
+
 }

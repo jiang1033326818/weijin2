@@ -56,7 +56,7 @@
           <text>{{item.workCompany===null?'':item.workCompany}}</text>
         </view>
         <view class='blue'>
-          <text>{{item.type===null?'':item.type}}</text>
+          <text>擅长:  {{item.type===null?'':item.type}}</text>
         </view>
       </view>
 
@@ -65,10 +65,6 @@
       <view class='people'>
         <text>{{item.fwrs===null?0:item.fwrs}}人咨询过</text>
       </view>
-
-      <!-- <view class='peoplebutton1' bindtap="callphone1" data-id="{{item.id}}" data-phonenum="{{item.mobile}}">
-        电话咨询
-      </view> -->
       <view class='peoplebutton2' bindtap="askpeople" data-id="{{item.id}}" data-uid="{{item.uid}}" data-img="{{'http://zadai.net:8000'+item.workImage}}">
        立即咨询
       </view>
