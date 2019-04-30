@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/login/login",
+      "pages/login/login",
+    "pages/xieyi2/xieyi2",
+    "pages/xieyi/xieyi",
+
     "pages/achievement/achievement",
     "pages/expert/expert",
       "pages/cooperation/cooperation",
@@ -24,6 +27,7 @@
     "pages/knowdetails/knowdetails",
     "pages/knowdetails2/knowdetails2",
     "pages/mymanage/mymanage"
+     
   ],
   "permission": {
     "scope.userLocation": {

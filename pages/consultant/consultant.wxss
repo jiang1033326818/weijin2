@@ -109,8 +109,8 @@ view , page {
 .pink{
   margin-top: 30rpx;
  /* background: #ffccff; */
-  width: 100rpx;
-  text-align: center;
+  width: 300rpx;
+  text-align: left;
 }
 .pink text{
 font-size: 27rpx;

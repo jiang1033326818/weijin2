@@ -117,6 +117,13 @@ Page({
   ]
     },
 
+  toxieyi: function () {
+    wx.navigateTo({
+      url: '../xieyi2/xieyi2'
+    });
+  },
+
+
     // 导航点击滑动
     bindChange: function(e) {
       var current = e.detail.current;

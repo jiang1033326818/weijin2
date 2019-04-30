@@ -36,7 +36,11 @@ Page({
     xingming:''
   },
 
-
+  toxieyi:function(){
+    wx.navigateTo({
+      url: '../xieyi/xieyi'
+    });
+  },
 
   bindRegionChange: function(e) {
     console.log('picker发送选择改变，携带值为', e)
