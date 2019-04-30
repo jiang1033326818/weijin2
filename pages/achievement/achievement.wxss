@@ -42,8 +42,8 @@ view , page {
   margin-left: 2%;
 border-radius:50%;
 overflow: hidden;
-height:160rpx;
-width:160rpx;
+height:111rpx;
+width:111rpx;
 margin-top:15rpx;
 
 
@@ -51,14 +51,14 @@ margin-top:15rpx;
 .item-header{
   /* width: 160rpx;
   height: 160rpx; */
-  width:135rpx;
-height:116rpx;
+  width:111rpx;
+height:111rpx;
 
   
 }
 .rightlist{
   float: left;
-  margin-left: 3%
+  margin-left: 10%
 }
 .item-text{
   font-weight: bold;
@@ -69,7 +69,7 @@ height:116rpx;
 .pink{
   margin-top: 6rpx;
   background:#fda803; 
-  /* width: 100rpx; */
+  width: 110rpx;
   /* width: 500rpx; */
   overflow: hidden;
   /* text-align: center; */
@@ -77,7 +77,7 @@ height:116rpx;
 }
 .pink text{
 font-size: 27rpx;
-color: white;
+color: #ffffff;
 padding-left:13rpx;
 padding-right:13rpx;
 }
@@ -213,8 +213,8 @@ left:160rpx;
     z-index: 100;
     position: absolute;
     top: 0;
-    right:2.5%;
-    width: 34rpx;
+    right:14.5%;
+    width: 20rpx;
     height: 20rpx;
     margin:40rpx 20rpx 40rpx 0;
     transition: All 0.4s ease;  

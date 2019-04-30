@@ -19,29 +19,42 @@
   color: #FFFFFF;
    
 }
+
+.rcircle{
+  float: left;
+  width: 500rpx
+}
 .circle{
   border-radius: 50%;
   width: 100rpx;
   height: 100rpx;
   overflow: hidden;
   margin-top: 30rpx;
+  float: left;
 }
 .cardtop image{
   width: 100rpx;
-  height: 150rpx;
-  margin-top: -2rpx;
+  height: 100rpx;
 }
 
 .headbs{
   margin-left: 3%;
-  margin-top: 30rpx;
-
+  margin-top: 10rpx;
+  width: 500rpx;
 }
 .headb{
   font-size: 35rpx;
+   float: left;
+    margin-left: 20rpx
+}
+.clear{
+  clear: both;
 }
 .heads{
   font-size: 25rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 20rpx
 }
 .cardbottom{
   height:100rpx; 
@@ -164,13 +177,12 @@
   border: 1px solid #dddddd; 
   float: left;
   background: #f0f0f0;
-   overflow: hidden;
+  overflow: hidden;
 }
 .toptitle image{
   height: 80rpx;
   width: 80rpx;
   
- 
 }
 .bottomthree{
   position: fixed;
