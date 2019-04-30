@@ -209,7 +209,7 @@ Page({
         // data.unionId就是咱们要的东西了
         app.globalData.unionid = data.unionId
         console.log('解密后 unionid: ', app.globalData.unionid)
-        console.log(666, res)
+        console.log(666, res.userInfo.nickName)
         wx.request({
           url: urls.mainurl + urls.loginUrl,
           method: 'POST',
