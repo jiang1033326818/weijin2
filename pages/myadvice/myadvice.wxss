@@ -86,23 +86,25 @@ view , page {
   width: 95%;
    /* height: 410rpx;  */
   margin-left: 2.5%;
-  margin-top: 10rpx;
+  margin-top: 20rpx;
   background: #ffffff;
   border-radius: 10rpx;
 }
 
 .toplist{
-  height: 220rpx;
+  height: 200rpx;
   padding-top: 15rpx;
   border-bottom: 1px solid #f0f0f0;
 }
 .leftlist{
   float: left;
   margin-left: 2%;
+  width: 160rpx;
+  height: 180rpx;
+  overflow: hidden;
 }
 .item-header{
   width: 160rpx;
-  height: 200rpx
 }
 .rightlist{
   float: left;
@@ -148,7 +150,7 @@ color: #8daff3;
   margin-left: 3%;
   width:25%;
   height: 65rpx;
-  margin-top: 20rpx;
+  margin-top: 10rpx;
   border: 2px solid #3399cc;
   border-radius: 10rpx;
   color: #3399cc;
@@ -162,7 +164,7 @@ color: #8daff3;
   margin-right: 3%;
   width:25%;
   height: 65rpx;
-  margin-top: 120rpx;
+  margin-top: 100rpx;
   background: #1B68FB; 
   border: 2px solid #1B68FB;
   border-radius: 10rpx;

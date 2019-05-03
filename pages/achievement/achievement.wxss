@@ -32,10 +32,11 @@ view , page {
 }
 
 .toplist{
-  height: 220rpx;
+  min-height: 180rpx;
   padding-top: 15rpx;
   /* padding-top: 100rpx; */
   border-bottom: 1px solid #f0f0f0;
+  overflow: hidden;
 }
 .leftlist{
   float: left;
@@ -73,7 +74,7 @@ height:111rpx;
   /* width: 500rpx; */
   overflow: hidden;
   /* text-align: center; */
-  height: 40rpx;
+  min-height: 40rpx;
 }
 .pink text{
 font-size: 27rpx;
@@ -84,7 +85,8 @@ padding-right:13rpx;
 .blue{
   margin-top: 10rpx;
   width: 250rpx;
-  height: 45rpx;
+  min-height: 45rpx;
+  padding-bottom:15rpx;
 }
 .blue text{
 font-size: 27rpx;
@@ -96,7 +98,7 @@ text-overflow: hidden;
 word-break: break-all;
 -webkit-box-orient: vertical;
 -webkit-line-clamp:2; 
-height: 80rpx;
+max-height: 80rpx;
 width: 500rpx;
 }
 .people{

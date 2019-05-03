@@ -17,6 +17,8 @@
 	"appid": "wx0f95ffcd25a151de",
 	"projectname": "weijin",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -35,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -78,6 +80,18 @@
 					"name": "分享进入",
 					"pathName": "pages/task/task",
 					"query": "param={\"task\":{\"id\":1,\"name\":\"2018年09月 月度用电需求申报\",\"customerId\":1,\"customerName\":\"华润热电集团河北第一热电厂\",\"closingTime\":1537574399000,\"gatherNoticeId\":1,\"type\":\"YEAR\",\"leaveDays\":1},\"status\":\"doing\",\"contact\":{\"name\":\"王某某\"}}"
+				},
+				{
+					"id": -1,
+					"name": "顾问列表",
+					"pathName": "pages/achievement/achievement",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wodezixun",
+					"pathName": "pages/myadvice/myadvice",
+					"scene": null
 				}
 			]
 		}

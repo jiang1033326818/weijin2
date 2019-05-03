@@ -20,7 +20,7 @@
 
           <view class='toplist'  bindtap='toclues' data-pnum="{{item.uid}}" data-img="{{'http://zadai.net:8000/'+item.workImage}}">
             <view class='leftlist'>
-              <image src="{{'http://zadai.net:8000/'+item.workImage}}" class="item-header"></image>
+              <image src="{{'http://zadai.net:8000/'+item.workImage}}" class="item-header" mode='widthFix'></image>
             </view>
             <view class='rightlist'>
               <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName===null?'':item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?"":item.level}}</text>

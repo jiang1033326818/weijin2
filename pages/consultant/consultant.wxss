@@ -95,9 +95,13 @@ view , page {
   float: left;
   margin-left: 2%;
 }
+.imgbanbox{
+  width:170rpx;
+  height:170rpx;
+  overflow: hidden;
+}
 .item-header{
   width: 170rpx;
-  height: 170rpx
 }
 .rightlist{
   float: left;
