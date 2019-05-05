@@ -79,7 +79,7 @@ Page({
       selectPerson: true,
       selectArea: false,
     })
-    this.getloanall(e.target.dataset.me === "全国" ? "" : e.target.dataset.me,this.data.firstPerson2)
+    this.getloanall(e.target.dataset.me === "全国" ? "" : e.target.dataset.me, this.data.firstPerson2 === "所有服务" ? "" : this.data.firstPerson2)
   },
   mySelect2: function (e) {
     this.setData({
@@ -87,7 +87,7 @@ Page({
       selectPerson2: true,
       selectArea2: false,
     })
-    this.getloanall(this.data.firstPerson, e.target.dataset.me === "所有服务" ? "" : e.target.dataset.me)
+    this.getloanall(this.data.firstPerson === "全国" ? "" : this.data.firstPerson, e.target.dataset.me === "所有服务" ? "" : e.target.dataset.me)
   },
 //获取地区
 

@@ -282,7 +282,7 @@ display:"none"
             console.log(response,"laa")
             if(response.data.code===0){
               wx.setStorageSync("expert",1)
-             
+              wx.setStorageSync('qaz', '1')
             
               wx.navigateTo({
                 url: '../success/success'

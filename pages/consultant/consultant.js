@@ -72,7 +72,7 @@ Page({
 
   //页面跳转
   toone: function(e) {
-    wx.setStorageSync("mid", e.currentTarget.dataset.bntuser),
+    wx.setStorageSync("mid", e.currentTarget.dataset.manger),
     wx.navigateTo({
       url: '../detailso/detailso'
     });
@@ -80,7 +80,7 @@ Page({
 
   //点击查看详情
  btn: function (e) {
-   wx.setStorageSync("mid", e.currentTarget.dataset.bntuser),
+   wx.setStorageSync("mid", e.currentTarget.dataset.manger),
     wx.navigateTo({
       url: '../detailso/detailso'
     });
@@ -123,7 +123,7 @@ Page({
         console.log(e, "22")
         that.setData({
           getloanalllist: e.data.data.dataList,
-          height: e.data.data.dataList.length*400+53
+          height: e.data.data.dataList.length*310+50
         })
       },
       fail: function(err) {

@@ -52,13 +52,13 @@
       </view>
       <view class='rightlist'>
         <text class='item-text' decode="{{true}}" space="{{true}}">{{item.realName===null?'':item.realName}} &nbsp;&nbsp;&nbsp;&nbsp;{{item.level===null?'':item.level}}</text>
-        <view class='pink'>
-          <!-- <text>{{item.workCompany===null?'':item.workCompany}}</text> -->
-          <text>{{"微金网"}}</text>
+        <view class="{{item.workCompany===null?'pink2':'pink'}}">
+          <text>{{item.workCompany===null?'':item.workCompany}}</text>
+          <!-- <text>{{"微金网"}}</text> -->
 
         </view>
         <view class='blue'>
-          <text>擅长:  {{item.type===null?'':item.type}}</text>
+          <text>擅长:  {{item.hobby===null?'':item.hobby}}</text>
         </view>
       </view>
 

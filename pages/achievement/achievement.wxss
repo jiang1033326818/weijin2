@@ -69,19 +69,41 @@ height:111rpx;
 }
 .pink{
   margin-top: 6rpx;
-  background:#fda803; 
-  width: 110rpx;
+
+  /* width: 110rpx; */
   /* width: 500rpx; */
+  width: auto;
   overflow: hidden;
   /* text-align: center; */
   min-height: 40rpx;
 }
 .pink text{
+    background:#fda803; 
 font-size: 27rpx;
 color: #ffffff;
 padding-left:13rpx;
 padding-right:13rpx;
 }
+.pink2{
+  margin-top: 6rpx;
+
+  /* width: 110rpx; */
+  /* width: 500rpx; */
+  width: auto;
+  overflow: hidden;
+  /* text-align: center; */
+  min-height: 40rpx;
+}
+.pink2 text{
+    background:null; 
+font-size: 27rpx;
+color: #ffffff;
+padding-left:13rpx;
+padding-right:13rpx;
+}
+
+
+
 .blue{
   margin-top: 10rpx;
   width: 250rpx;

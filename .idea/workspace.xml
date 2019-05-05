@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46585cc2-222d-4961-aa1a-198cea89796c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/home/home.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/achievement/achievement.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/achievement/achievement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/achievement/achievement.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/achievement/achievement.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/achievement/achievement.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/achievement/achievement.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/adviser/adviser.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/adviser/adviser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/consultant/consultant.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/consultant/consultant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/consultant/consultant.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/consultant/consultant.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/consultant/consultant.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/consultant/consultant.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/myadvice/myadvice.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/myadvice/myadvice.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/myadvice/myadvice.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/myadvice/myadvice.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/success/success.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/success/success.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/home/home.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="177" column="11" lean-forward="true" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+            <state relative-caret-position="104">
+              <caret line="163" column="123" lean-forward="true" selection-start-line="163" selection-start-column="123" selection-end-line="163" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -82,6 +92,7 @@
       <find>信用卡</find>
       <find>金融</find>
       <find>资金</find>
+      <find>入住</find>
     </findStrings>
     <replaceStrings>
       <replace>http://zadai.net:8000/uploads</replace>
@@ -95,6 +106,7 @@
       <replace>&quot;pageSize&quot;: 50,</replace>
       <replace>卡</replace>
       <replace />
+      <replace>入驻</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -129,33 +141,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="weijin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weijin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weijin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weijin" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weijin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weijin" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/项目/vue-antd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -213,11 +204,12 @@
       <workItem from="1555511354425" duration="33000" />
       <workItem from="1555596649355" duration="676000" />
       <workItem from="1556120651931" duration="111000" />
+      <workItem from="1557067697190" duration="70000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12043000" />
+    <option name="totallyTimeSpent" value="12113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -288,8 +280,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/home/home.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="177" column="11" lean-forward="true" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
+        <state relative-caret-position="104">
+          <caret line="163" column="123" lean-forward="true" selection-start-line="163" selection-start-column="123" selection-end-line="163" selection-end-column="123" />
         </state>
       </provider>
     </entry>

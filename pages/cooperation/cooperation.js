@@ -94,9 +94,9 @@ this.setData({
           icon: 'none'
         })
       } else {
+        wx.setStorageSync('qaz', '0')
         wx: wx.navigateTo({
           url: '../success/success',
-
         })
 
       }
